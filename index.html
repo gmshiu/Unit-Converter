@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main class="container">
+            <section class="main">
+                <div class="heading">
+                    <h1 id="main-heading">Metric/Imperial Unit Conversion</h1>
+                </div>
+                <div class="number-box">
+                    <!-- Change to input field--> 
+                    <!--p id="number-inpt">0</p-->
+                    <input 
+                        type="text"
+                        id="number-inpt"
+                        placeholder="0"
+                        name="#"
+                        oninput="enterNum()"
+                    />
+                </div>
+                <div class="convert-box">
+                    <button id="convert-btn">Convert</button>
+                </div>
+            </section>
+            <section class="box">
+                <div class="length-box">
+                    <h3>Length (Meter / Feet)</h3>
+                    <p id="length">0 meters = 0 feet | 0 feet = 0 meters</p>
+                </div>
+                <div class="volume-box">
+                    <h3>Volume (Liters / Gallons)</h3>
+                    <p id="volume">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+                </div>
+                <div class="mass-box">
+                    <h3>Mass (Kilograms / Pounds)</h3>
+                    <p id="mass">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-copyright">
+            <p>
+                © 2023
+                <a href="https://github.com/gmshiu" target="_blank">Godwin Mshiu</a>
+            </p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
